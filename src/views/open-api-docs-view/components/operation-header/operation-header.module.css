@@ -8,6 +8,7 @@
 	composes: g-offset-scroll-margin-top from global;
 	composes: hds-typography-display-400 from global;
 	font-weight: var(--token-typography-font-weight-bold);
+	overflow-wrap: break-word;
 }
 
 .methodAndPath {
@@ -19,4 +20,5 @@
 .path {
 	composes: hds-typography-code-300 from global;
 	color: var(--token-color-foreground-primary);
+	overflow-wrap: break-word;
 }
