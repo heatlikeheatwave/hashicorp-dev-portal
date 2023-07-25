@@ -1,3 +1,4 @@
+import { ReactNode } from 'react'
 import classNames from 'classnames'
 import type { OperationProps } from 'views/open-api-docs-view/types'
 import Badge from 'components/badge'
@@ -11,9 +12,9 @@ import s from './operation-header.module.css'
 
 interface OperationHeaderProps {
 	slug: OperationProps['slug']
-	headerText: OperationProps['operationId']
+	headerText: ReactNode
 	method: OperationProps['type']
-	path: OperationProps['path']['truncated']
+	path: ReactNode
 	className?: string
 }
 
